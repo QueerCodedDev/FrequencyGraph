@@ -4,7 +4,7 @@ class Line {
 
         // Get first and last data points
         this.start = this.dataPoints[0];
-        this.end   = this.dataPoints[dataPoints.length-1];
+        this.end   = this.dataPoints[this.dataPoints.length-1];
 
         // Get rest of data points
         this.connectEntries(this.dataPoints);
@@ -28,6 +28,6 @@ class Line {
     }
 
     render() {
-        
+
     }
 }
