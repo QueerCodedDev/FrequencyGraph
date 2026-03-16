@@ -78,11 +78,11 @@ class EntryManager {
         let divArr = [];
         let sortedArr = [];
         for (let e of arr) {
-            if (uniArr.indexOf(e.universe) == -1) {
-                uniArr.push(e.universe);
+            if (uniArr.indexOf(e.uni) == -1) {
+                uniArr.push(e.uni);
                 divArr.push([]);
             }
-            divArr[uniArr.indexOf(e.universe)].push(e);
+            divArr[uniArr.indexOf(e.uni)].push(e);
         }
 
         console.log(uniArr)
