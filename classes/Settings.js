@@ -1,6 +1,6 @@
 class Settings {
     // Canvas dimensions
-    static canvasW = 1000;
+    static canvasW = 2520;
     static canvasH =  800;
     static offset  =   25;
     static xINC    =   10;
@@ -33,6 +33,6 @@ class Settings {
     }
 
     // TEMP SETTINGS. WILL NEED TO BE REMOVED OR REWORKED TO BE not HARDCODED (?)
-    static EARLIEST = new Date('12-05-2004');
+    static EARLIEST = new Date('01-01-2004');
     static LATEST   = new Date('12-31-2025');
 }
