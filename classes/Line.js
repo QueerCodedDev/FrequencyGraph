@@ -35,9 +35,9 @@ class Line {
     render() {
         stroke(this.color);
         for (let e of this.dataPoints) {
-            let x1 = map(new Date(this.start.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
+            let x1 = map(new Date(e.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
             let y1 = (this.dataPoints.indexOf(e) + 1) * 10;
-            let x2 = map(new Date(this.start.next.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
+            let x2 = map(new Date(e.next.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
             let y2 = (this.dataPoints.indexOf(e.next) + 1) * 10;
 
             line(x1, y1, x2, y2);

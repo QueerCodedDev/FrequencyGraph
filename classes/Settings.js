@@ -3,7 +3,7 @@ class Settings {
     static canvasW = 1000;
     static canvasH =  800;
     static offset  =   25;
-    static xINC    =  100;
+    static xINC    =   10;
 
     // Font/Text settings/vars
     static point      = 25;
