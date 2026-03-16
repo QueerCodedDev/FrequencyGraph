@@ -16,7 +16,14 @@ function setup() {
 }
 
 function draw() {
-    background(Settings.white);
-    console.log(lines[0].color);
+    background(Settings.darkGrey);
+    renderGraph();
     noLoop();
+}
+
+function renderGraph() {
+    translate(0, Settings.canvasH)
+    // Draw x axis
+    stroke(255,0,0)
+    line(0, 0, Settings.canvasW, 0)
 }
