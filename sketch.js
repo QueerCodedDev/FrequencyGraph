@@ -34,6 +34,7 @@ function renderGraph() {
     line(0, 0, 0, -Settings.canvasH)
 
     for (let l of lines) {
+        console.log(l.color)
         l.render();
     }
 }
