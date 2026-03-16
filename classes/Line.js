@@ -37,9 +37,9 @@ class Line {
         for (let e of this.dataPoints) {
             if (e == this.end) return;
             let x1 = map(new Date(e.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
-            let y1 = (this.dataPoints.indexOf(e)) * 10;
+            let y1 = (this.dataPoints.indexOf(e));
             let x2 = map(new Date(e.next.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
-            let y2 = (this.dataPoints.indexOf(e.next)) * 10;
+            let y2 = (this.dataPoints.indexOf(e.next));
 
             line(x1, -y1, x2, -y2);
         }
