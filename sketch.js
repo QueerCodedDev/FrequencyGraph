@@ -33,5 +33,5 @@ function renderGraph() {
     // Draw y axis (EPISODES)
     line(0, 0, 0, -Settings.canvasH)
 
-    //lines[0].render();
+    lines[0].render();
 }
