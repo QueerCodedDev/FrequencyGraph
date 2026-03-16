@@ -23,4 +23,10 @@ class Settings {
     static white    = '#ffffff';
     static grey     = '#646464';
     static darkGrey = '#1b1b1b';
+
+    // Sort options
+    static SORT = {
+        DATE: 'date',
+        UNIVERSE: 'universe'
+    }
 }
