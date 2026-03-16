@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-    background(Settings.darkGrey);
+    background(Settings.white);
     console.log(dataJSON);
     noLoop();
 }
