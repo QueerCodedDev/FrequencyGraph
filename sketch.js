@@ -10,9 +10,10 @@ function preload() {
 function setup() {
     createCanvas(Settings.canvasW, Settings.canvasH);
     entryManager = new EntryManager(dataJSON.media);
-    for (let e of entryManager.entriesByUniverseByAirDate) {
-        lines.push(new Line(e));
-    }
+    lines.push(new Line(entryManager.entriesByUniverseByAirDate[1]));
+    // for (let e of entryManager.entriesByUniverseByAirDate) {
+    //     lines.push(new Line(e));
+    // }
 }
 
 function draw() {
