@@ -27,8 +27,11 @@ function renderGraph() {
     stroke(Settings.black);
     // Draw x axis (DATE)
     line(0, 0, Settings.canvasW, 0);
+    line(Settings.xINC, -10, Settings.xINC, 10);
+
+
     // Draw y axis (EPISODES)
     line(0, 0, 0, -Settings.canvasH)
 
-    lines[0].render();
+    //lines[0].render();
 }
