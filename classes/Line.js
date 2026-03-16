@@ -35,12 +35,13 @@ class Line {
     render() {
         stroke(this.color);
         for (let e of this.dataPoints) {
+            if (e == this.end) return;
             let x1 = map(new Date(e.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
             let y1 = (this.dataPoints.indexOf(e) + 1) * 10;
             let x2 = map(new Date(e.next.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
             let y2 = (this.dataPoints.indexOf(e.next) + 1) * 10;
 
-            line(x1, y1, x2, y2);
+            line(x1, -y1, x2, -y2);
             console.log(`X1: ${x1}\nY1: ${y1}\nX2: ${x2}\nY2: ${y2}\n`)
         }
 
