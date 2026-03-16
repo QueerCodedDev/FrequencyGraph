@@ -7,7 +7,7 @@ function preload() {
 
 function setup() {
     createCanvas(Settings.canvasW, Settings.canvasH);
-    entryManager = new EntryManager(dataJSON);
+    entryManager = new EntryManager(dataJSON.media);
 }
 
 function draw() {
