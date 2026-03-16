@@ -1,5 +1,7 @@
 let dataJSON;
 let entryManager;
+let lines = [];
+
 function preload() {
     dataJSON = loadJSON('res/individual_data.json');
     Settings.font = loadFont('res/Consolas.ttf');
@@ -8,10 +10,13 @@ function preload() {
 function setup() {
     createCanvas(Settings.canvasW, Settings.canvasH);
     entryManager = new EntryManager(dataJSON.media);
+    for (let e of entryManager) {
+        lines.push(new Line(e));
+    }
 }
 
 function draw() {
     background(Settings.white);
-    console.log(entryManager.dataEntriesByUniverseByAirDate);
+    console.log(lines[0].color);
     noLoop();
 }
