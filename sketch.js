@@ -22,7 +22,7 @@ function draw() {
 }
 
 function renderGraph() {
-    translate(0, Settings.canvasH);
+    translate(25, Settings.canvasH - 25);
     // Draw x axis
     stroke(Settings.black);
     line(0, 0, Settings.canvasW, 0);
