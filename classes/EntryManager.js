@@ -113,5 +113,22 @@ class EntryManager {
 
         return min;
     }
+
+    /////////////////////////////////////////////////////////////////////////////////
+    /********************************************************************************
+     * Go through the potentially sorted array and make sure things are actually
+     * sorted.
+     * 
+     * @param   {Array}   arr    - Array being checking if sorted
+     * @param   {String}  sortBy - Sorting method. Date by defualt
+     * @returns {Boolean}        - Whether arr is sorted or not
+     */ 
+    isSorted(arr, sortBy) {
+        for (let i = 0; i < arr.length-1; i++) {
+            if (this.compare(arr[i], arr[i+1], sortBy) != arr[i]) return false;
+        }
+
+        return true;
+    }
 }
 
