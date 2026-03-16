@@ -12,6 +12,6 @@ function setup() {
 
 function draw() {
     background(Settings.white);
-    console.log(dataJSON);
+    console.log(dataJSON.media);
     noLoop();
 }
