@@ -33,5 +33,7 @@ function renderGraph() {
     // Draw y axis (EPISODES)
     line(0, 0, 0, -Settings.canvasH)
 
-    lines[0].render();
+    for (let l of lines) {
+        l.render();
+    }
 }
