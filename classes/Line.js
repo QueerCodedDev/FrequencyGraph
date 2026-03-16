@@ -33,9 +33,9 @@ class Line {
     // The values below are just for testing, and do NOT AT ALL reflect how this should be handled
     // The val_high should not be based on this.end, but based on the over-all range of dates.
     render() {
-        let x1 = map(new Date(this.start.date), 0, new Date(this.end.date), 0, Settings.canvasH);
+        let x1 = map(new Date(this.start.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
         let y1 = 1 * 10
-        let x2 = map(new Date(this.start.next.date), 0, new Date(this.end.date), 0, Settings.canvasH);
+        let x2 = map(new Date(this.start.next.date).getTime(), Settings.EARLIEST.getTime(), Settings.LATEST.getTime(), 0, Settings.canvasW);
         let y2 = 2 * 10;
 
         line(x1, y1, x2, y2);

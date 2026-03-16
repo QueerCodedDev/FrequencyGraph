@@ -30,4 +30,8 @@ class Settings {
         DATE: 'date',
         UNIVERSE: 'universe'
     }
+
+    // TEMP SETTINGS. WILL NEED TO BE REMOVED OR REWORKED TO BE not HARDCODED (?)
+    static EARLIEST = new Date('12-05-2004');
+    static LATEST   = new Date('12-31-2025');
 }
