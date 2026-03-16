@@ -1,7 +1,7 @@
 class Settings {
     // Canvas dimensions
     static canvasW = 1000;
-    static canvasH = 1000;
+    static canvasH =  800;
 
     // Font/Text settings/vars
     static point      = 25;
