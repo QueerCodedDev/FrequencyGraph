@@ -1,7 +1,7 @@
 let dataJSON;
 
 function preload() {
-    dataJSON = loadJSON('res/individual_data.json').media;
+    dataJSON = loadJSON('res/individual_data.json');
     Settings.font = loadFont('res/Consolas.ttf');
 }
 
