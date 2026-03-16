@@ -3,7 +3,7 @@ class EntryManager {
         this.entries = this.createEntries(database);
 
         // Create an array of entries sorted by universe
-        this.dataEntriesByUniverseByAirDate = this.sort(this.entries.slice(), Settings.SORT.UNIVERSE);
+        this.entriesByUniverseByAirDate = this.sort(this.entries.slice(), Settings.SORT.UNIVERSE);
     }
 
     createEntries(db) {
