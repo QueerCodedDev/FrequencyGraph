@@ -28,5 +28,5 @@ function renderGraph() {
     // Draw x axis
     line(0, 0, Settings.canvasW, 0);
     // Draw y axis
-    line(0, -Settings.canvasH + 25, 0, Settings.canvasH + 25)
+    line(0, -Settings.canvasH + 25, 0, Settings.canvasH)
 }
