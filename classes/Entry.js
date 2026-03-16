@@ -4,5 +4,8 @@ class Entry {
         this.title = data.title;
         this.uni   = data.universe;
         this.date  = data.date;
+
+        this.prev;
+        this.next;
     }
 }
