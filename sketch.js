@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-    background(Settings.darkGrey);
+    background(Settings.grey);
     renderGraph();
     noLoop();
 }
