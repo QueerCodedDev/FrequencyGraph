@@ -85,9 +85,8 @@ class EntryManager {
             divArr[uniArr.indexOf(e.uni)].push(e);
         }
 
-        console.log(uniArr)
         for (let a of divArr) {
-            sortedArr.push([this.sort(a)]);
+            sortedArr.push(this.sort(a));
         }
 
         return sortedArr;
