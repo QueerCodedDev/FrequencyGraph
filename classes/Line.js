@@ -33,7 +33,7 @@ class Line {
     // The values below are just for testing, and do NOT AT ALL reflect how this should be handled
     // The val_high should not be based on this.end, but based on the over-all range of dates.
     render() {
-        console.log(new Date(this.start.date).getTime())
+        console.log(new Date(this.start.date))
 
 
         return;
