@@ -35,6 +35,7 @@ function renderGraph() {
 
     for (let l of lines) {
         console.log(l.color)
+        console.log(l.dataPoints)
         l.render();
     }
 }
