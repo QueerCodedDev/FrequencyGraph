@@ -86,7 +86,7 @@ class EntryManager {
         }
 
         for (let a of divArr) {
-            sortedArr.push(this.sort(a));
+            sortedArr.push(this.sortByDate(a));
         }
 
         return sortedArr;
