@@ -40,5 +40,7 @@ class Line {
         let y2 = 2 * 10;
 
         line(x1, y1, x2, y2);
+
+        console.log(`X1: ${x1}\nY1: ${y1}\nX2: ${x2}\nY2: ${y2}\n`)
     }
 }
