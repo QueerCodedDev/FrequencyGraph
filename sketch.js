@@ -22,11 +22,13 @@ function draw() {
 }
 
 function renderGraph() {
-    translate(25, Settings.canvasH - 25);
+    translate(Settings.offset, Settings.canvasH - Settings.offset);
     
     stroke(Settings.black);
-    // Draw x axis
+    // Draw x axis (DATE)
     line(0, 0, Settings.canvasW, 0);
-    // Draw y axis
+    // Draw y axis (EPISODES)
     line(0, 0, 0, -Settings.canvasH)
+
+    lines[0].render();
 }
