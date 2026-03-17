@@ -34,7 +34,9 @@ function sortLines(arr) {
         // For each item in arr
         for (let i = 0; i < arr.length; i++) {
             // Compare it against the current minimum
-            minItem = this.compare(minItem, arr[i], sortBy);
+            if (minItem.start.dateOBJ > arr[i].start.dateOBJ) {
+                minItem = arr[i];
+            }
         }
 
         // Push new minimum to sortedArr
