@@ -13,6 +13,20 @@ function setup() {
     for (let e of entryManager.entriesByUniverseByAirDate) {
         lines.push(new Line(e));
     }
+
+    let sortedLines = [];
+    let min = lines[0];
+    for (let line of lines) {
+        if (min.start.date > line.start.date) {
+            min = line;
+        }
+        // Push new minimum to sortedArr
+        sortedLines.push(min);
+        // Remove new minimum from the array being sorted
+        lines.splice(lines.indexOf(min), 1);
+    }
+
+    lines = sortedLines;
 }
 
 function draw() {

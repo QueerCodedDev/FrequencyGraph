@@ -30,8 +30,6 @@ class Line {
     // x = DATE, y = EPISODES
     // map(value, val_low, val_high, target_low, target_high);
 
-    // The values below are just for testing, and do NOT AT ALL reflect how this should be handled
-    // The val_high should not be based on this.end, but based on the over-all range of dates.
     render() {
         stroke(this.color);
         for (let e of this.dataPoints) {
