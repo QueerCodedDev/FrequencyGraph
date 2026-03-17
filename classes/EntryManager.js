@@ -49,7 +49,6 @@ class EntryManager {
             for (let i = 0; i < arr.length; i++) {
                 // Compare it against the current minimum
                 minItem = this.compare(minItem, arr[i], sortBy);
-                console.log(`Picked: ${minItem}`)
             }
 
             // Push new minimum to sortedArr
@@ -104,7 +103,6 @@ class EntryManager {
      * @returns {DataEntry}        - Whichever DataEntry has the actual min
      */ 
     compare(min, cur, sortBy) {
-        console.log(`Min: ${min} | Cur: ${cur}`);
         switch(sortBy) {
             case Settings.SORT.DATE:
                 if (min.dateOBJ > cur.dateOBJ) return cur;
