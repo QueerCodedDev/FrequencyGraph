@@ -10,10 +10,9 @@ function preload() {
 function setup() {
     createCanvas(Settings.canvasW, Settings.canvasH);
     entryManager = new EntryManager(dataJSON.media);
-    lines.push(new Line(entryManager.entriesByUniverseByAirDate[1]));
-    // for (let e of entryManager.entriesByUniverseByAirDate) {
-    //     lines.push(new Line(e));
-    // }
+    for (let e of entryManager.entriesByUniverseByAirDate) {
+        lines.push(new Line(e));
+    }
 }
 
 function draw() {
@@ -28,15 +27,18 @@ function renderGraph() {
     stroke(Settings.black);
     // Draw x axis (DATE)
     line(0, 0, Settings.canvasW, 0);
-    line(Settings.xINC, -10, Settings.xINC, 10);
+    for (let i = 0; i < Settings.canvasW; i++) {
+        line(Settings.xINC * i, -10, Settings.xINC * i, 10);
+    }
 
 
     // Draw y axis (EPISODES)
     line(0, 0, 0, -Settings.canvasH)
+    for (let i = 0; i < Settings.canvasH; i++) {
+        line(-10, Settings.yINC * i, -10, Settings.yINC * i);
+    }
 
     for (let l of lines) {
-        console.log(l.color)
-        console.log(l.dataPoints)
         l.render();
     }
 }
