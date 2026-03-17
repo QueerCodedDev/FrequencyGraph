@@ -4,6 +4,7 @@ class Settings {
     static canvasH =  800;
     static offset  =   25;
     static xINC    =   10;
+    static yINC    =   10;
 
     // Font/Text settings/vars
     static point      = 25;
