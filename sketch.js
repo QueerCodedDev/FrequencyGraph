@@ -62,7 +62,7 @@ function renderGraph() {
     // Draw y axis (EPISODES)
     line(0, 0, 0, -Settings.canvasH)
     for (let i = 0; i < Settings.canvasH; i++) {
-        line(-10, -Settings.yINC * i, 10, -Settings.yINC * i);
+        line(-10, -Settings.yINC * i * 3, 10, -Settings.yINC * i *3);
     }
 
     for (let l of lines) {

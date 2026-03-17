@@ -1,7 +1,7 @@
 class Settings {
     // Canvas dimensions
     static canvasW = 2520;
-    static canvasH = 1000;
+    static canvasH = 1100;
     static offset  =   25;
     static xINC    =   10;
     static yINC    =   10;
